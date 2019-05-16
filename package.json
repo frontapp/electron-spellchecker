@@ -29,7 +29,7 @@
   "main": "lib/index.js",
   "homepage": "https://github.com/paulcbetts/electron-spellchecker",
   "dependencies": {
-    "@paulcbetts/cld": "^2.4.6",
+    "@paulcbetts/cld": "https://github.com/nornagon/node-cld/tarball/fix-compile",
     "@paulcbetts/spellchecker": "^4.0.6",
     "bcp47": "^1.1.2",
     "debug": "^2.6.3",

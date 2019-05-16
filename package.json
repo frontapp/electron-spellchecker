@@ -30,7 +30,7 @@
   "homepage": "https://github.com/paulcbetts/electron-spellchecker",
   "dependencies": {
     "@paulcbetts/cld": "https://github.com/nornagon/node-cld/tarball/fix-compile",
-    "@paulcbetts/spellchecker": "^4.0.6",
+    "@nornagon/spellchecker": "^3.5.3",
     "bcp47": "^1.1.2",
     "debug": "^2.6.3",
     "electron-remote": "^1.1.1",

@@ -651,8 +651,14 @@ module.exports = class SpellCheckHandler {
       localeList = this.currentSpellchecker.getAvailableDictionaries()
         .map((x => {
           if (x.length === 2) return fallbackLocaleTable[x];
-          return normalizeLanguageCode(x);
-        }));
+          try {
+            return normalizeLanguageCode(x);
+          } catch (error) {
+            d(`Error: ${error}`);
+            return null;
+          }
+        }))
+        .filter(x => x);
     }
 
     d(`Filtered Locale list: ${JSON.stringify(localeList)}`);
